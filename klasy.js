@@ -59,7 +59,6 @@ myMammal = new Mammal('Kot', 'kotowate');
 myDog = new Dog('Nero', 'pies', 'owczarek');
 myDogMammal = new Mammal('Reksio', 'pies');
 console.log(myDog.describe());
-
 myDog.animalName = 'Drops';
 myDog.dogBreed = 'Labrador';
 console.log(myDog.describe());

@@ -14,8 +14,7 @@ function getType(argument) {
     return typeof argument;
 }
 
-function amountToCoins(amount) {
-    const coins = [25, 10, 5, 2, 1];
+function amountToCoins(amount, coins) {
     let result = [];
     for (let i = 0; i < coins.length; i++) {
         while (amount >= coins[i]) {
@@ -29,4 +28,4 @@ function amountToCoins(amount) {
 console.log(fibonacci(6));
 console.log(isPalindrome("kamilslimak"));
 console.log(getType('kamil'));
-console.log(amountToCoins(46));
+console.log(amountToCoins(46,coins = [25, 10, 5, 2, 1]));
