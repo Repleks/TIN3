@@ -35,35 +35,17 @@ class Mammal extends Animal {
     }
 }
 
-class Dog extends Mammal {
-    constructor(name, species, breed) {
-        super(name, species);
-        this.breed = breed;
-    }
-
-    get dogBreed() {
-        return this.breed;
-    }
-
-    set dogBreed(newBreed) {
-        this.breed = newBreed;
-    }
-
-    describe() {
-        return super.describe() + ` rasa to ` + this.breed;
-    }
-}
-
-
+myAnimal = new Animal('Kot');
+console.log(myAnimal.describe());
+console.log(myAnimal.animalName);
+myAnimal.animalName = 'Pies';
+console.log(myAnimal.animalName);
 myMammal = new Mammal('Kot', 'kotowate');
-myDog = new Dog('Nero', 'pies', 'owczarek');
-myDogMammal = new Mammal('Reksio', 'pies');
-console.log(myDog.describe());
-myDog.animalName = 'Drops';
-myDog.dogBreed = 'Labrador';
-console.log(myDog.describe());
+myDogMammal = new Mammal('Reksio', 'psowate');
 console.log(myMammal.describe());
 console.log(myMammal.animalName);
 console.log(myMammal.mammalSpecies);
+myMammal.mammalSpecies = 'ryba';
+console.log(myMammal.describe());
 console.log(myDogMammal.describe());
 
