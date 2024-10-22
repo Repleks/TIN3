@@ -28,4 +28,4 @@ function amountToCoins(amount, coins) {
 console.log(fibonacci(6));
 console.log(isPalindrome("kamilslimak"));
 console.log(getType('kamil'));
-console.log(amountToCoins(46,coins = [25, 10, 5, 2, 1]));
+console.log(amountToCoins(46,[25, 10, 5, 2, 1]));
